@@ -5,6 +5,7 @@ import List from "./components/list/List";
 
 class App extends Component {
   render() {
+  const demoItems = ['list item 1', 'list item 2', 'list item 3', 'list item 4', 'list item 5'];
     return (
       <div className="App">
         <Card
@@ -16,11 +17,11 @@ class App extends Component {
           power="3"
           toughness="0">
         </Card>
-        
+
         <b>horizontal list</b>
-        <List direction="horizontal"></List>
+        <List direction="horizontal" items={demoItems}></List>
         <b>vertical list</b>
-        <List direction="vertical"></List>
+        <List direction="vertical" items={demoItems}></List>
       </div>
     );
   }

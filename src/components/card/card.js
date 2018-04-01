@@ -7,7 +7,7 @@ class Card extends Component {
     const { name, description, image, rules, cost, power, toughness } = this.props;
     return (
       <div className="card">
-        <img className="card-showcase" src={image}></img>
+        <img alt="card art" className="card-showcase" src={image}></img>
         <div className="card-content">
           <h2>{name}</h2>
           <b>{rules}</b>

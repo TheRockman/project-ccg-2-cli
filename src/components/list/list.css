@@ -4,14 +4,22 @@
   list-style: none;
 }
 
-.directional-list > li{
-    flex-basis: 100%;
+.directional-list > li {
+  background: white;
+  box-shadow: var(--level1);
 }
 
 .horizontal{
 flex-direction: row;
+flex-wrap: wrap;
+}
+.horizontal > li{
+  flex-basis: 33%;
 }
 
 .vertical{
   flex-direction: column;
+}
+.vertical > li{
+    flex-basis: 100%;
 }
