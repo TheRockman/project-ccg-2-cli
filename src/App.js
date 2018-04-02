@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Card from "./components/card/Card";
 import List from "./components/list/List";
+import Draglist from "./components/list/Draglist";
+
 
 class App extends Component {
   render() {
@@ -22,6 +24,8 @@ class App extends Component {
         <List direction="horizontal" items={demoItems}></List>
         <b>vertical list</b>
         <List direction="vertical" items={demoItems}></List>
+        <Draglist items="{demoItems}"></Draglist>
+        <Draglist items="{demoItems}"></Draglist>
       </div>
     );
   }
